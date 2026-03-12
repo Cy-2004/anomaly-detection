@@ -12,6 +12,19 @@ Resources:
 
   DataBucket:
     Type: AWS::S3::Bucket
+    DependsOn: SNSTopicPolicy
+    Properties:
+      NotificationConfiguration:
+        TopicConfigurations:
+          - Event: s3:ObjectCreated:*
+            Topic: !Ref SNSTopic
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: prefix
+                    Value: raw/
+                  - Name: suffix
+                    Value: .csv
 
 # IAM role for EC2
 
@@ -116,6 +129,20 @@ Resources:
     Type: AWS::SNS::Topic
     Properties:
       TopicName: ds5220-dp1
+    
+  SNSTopicPolicy:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      Topics:
+        - !Ref SNSTopic
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: s3.amazonaws.com
+            Action: sns:Publish
+            Resource: !Ref SNSTopic
 
 # SNS subscription
 
@@ -125,24 +152,6 @@ Resources:
       Protocol: http
       TopicArn: !Ref SNSTopic
       Endpoint: !Sub "http://${ElasticIP}:8000/notify"
-
-# S3 event notification
-
-  BucketNotification:
-    Type: AWS::S3::BucketNotification
-    Properties:
-      Bucket: !Ref DataBucket
-      NotificationConfiguration:
-        TopicConfigurations:
-          - Event: s3:ObjectCreated:*
-            Topic: !Ref SNSTopic
-            Filter:
-              S3Key:
-                Rules:
-                  - Name: prefix
-                    Value: raw/
-                  - Name: suffix
-                    Value: .csv
 
 # Outputs
 
