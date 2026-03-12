@@ -4,6 +4,7 @@ import math
 import boto3
 from datetime import datetime
 from typing import Optional
+from logger_config import logger
 
 s3 = boto3.client("s3")
 
@@ -21,8 +22,10 @@ class BaselineManager:
     def load(self) -> dict:
         try:
             response = s3.get_object(Bucket=self.bucket, Key=self.baseline_key)
+            logger.info("Baseline loaded")
             return json.loads(response["Body"].read())
         except s3.exceptions.NoSuchKey:
+            logger.info("No existing baseline found")
             return {}
 
     def save(self, baseline: dict):
@@ -33,6 +36,7 @@ class BaselineManager:
             Body=json.dumps(baseline, indent=2),
             ContentType="application/json"
         )
+        logger.info("Baseline saved")
 
     def update(self, baseline: dict, channel: str, new_values: list[float]) -> dict:
         """

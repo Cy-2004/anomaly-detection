@@ -9,70 +9,92 @@ from datetime import datetime
 from fastapi import FastAPI, BackgroundTasks, Request
 from baseline import BaselineManager
 from processor import process_file
+from logger_config import logger
 
 app = FastAPI(title="Anomaly Detection Pipeline")
 
 s3 = boto3.client("s3")
-BUCKET_NAME = os.environ["BUCKET_NAME"]
+BUCKET_NAME = os.environ.get("BUCKET_NAME")
+
+if not BUCKET_NAME:
+    raise RuntimeError("BUCKET_NAME environment variable not set")
 
 # ── SNS subscription confirmation + message handler ──────────────────────────
 
 @app.post("/notify")
 async def handle_sns(request: Request, background_tasks: BackgroundTasks):
-    body = await request.json()
-    msg_type = request.headers.get("x-amz-sns-message-type")
 
-    # SNS sends a SubscriptionConfirmation before it will deliver any messages.
-    # Visiting the SubscribeURL confirms the subscription.
-    if msg_type == "SubscriptionConfirmation":
-        confirm_url = body["SubscribeURL"]
-        requests.get(confirm_url)
-        return {"status": "confirmed"}
+    try:
+        body = await request.json()
+        msg_type = request.headers.get("x-amz-sns-message-type")
 
-    if msg_type == "Notification":
+        logger.info("Received SNS message")
+
+        # SNS sends a SubscriptionConfirmation before it will deliver any messages.
+        # Visiting the SubscribeURL confirms the subscription.
+        if msg_type == "SubscriptionConfirmation":
+            confirm_url = body["SubscribeURL"]
+            requests.get(confirm_url)
+            logger.info("SNS subscription confirmed")
+            return {"status": "confirmed"}
+        
         # The SNS message body contains the S3 event as a JSON string
-        s3_event = json.loads(body["Message"])
-        for record in s3_event.get("Records", []):
-            key = record["s3"]["object"]["key"]
-            if key.startswith("raw/") and key.endswith(".csv"):
-                background_tasks.add_task(process_file, BUCKET_NAME, key)
+        if msg_type == "Notification":
+            s3_event = json.loads(body["Message"])
 
-    return {"status": "ok"}
+            for record in s3_event.get("Records", []):
+                key = record["s3"]["object"]["key"]
 
+                if key.startswith("raw/") and key.endswith(".csv"):
+                    logger.info(f"Dispatching processing task for {key}")
+                    background_tasks.add_task(process_file, BUCKET_NAME, key)
 
+        return {"status": "ok"}
+
+    except Exception as e:
+        logger.error(f"Error handling SNS notification: {str(e)}")
+        return {"status": "error"}
+        
 # ── Query endpoints ───────────────────────────────────────────────────────────
 
 @app.get("/anomalies/recent")
 def get_recent_anomalies(limit: int = 50):
-    """Return rows flagged as anomalies across the 10 most recent processed files."""
-    paginator = s3.get_paginator("list_objects_v2")
-    pages = paginator.paginate(Bucket=BUCKET_NAME, Prefix="processed/")
 
-    keys = sorted(
-        [
-            obj["Key"]
-            for page in pages
-            for obj in page.get("Contents", [])
-            if obj["Key"].endswith(".csv")
-        ],
-        reverse=True,
-    )[:10]
+    try:
+        paginator = s3.get_paginator("list_objects_v2")
+        pages = paginator.paginate(Bucket=BUCKET_NAME, Prefix="processed/")
 
-    all_anomalies = []
-    for key in keys:
-        response = s3.get_object(Bucket=BUCKET_NAME, Key=key)
-        df = pd.read_csv(io.BytesIO(response["Body"].read()))
-        if "anomaly" in df.columns:
-            flagged = df[df["anomaly"] == True].copy()
-            flagged["source_file"] = key
-            all_anomalies.append(flagged)
+        keys = sorted(
+            [
+                obj["Key"]
+                for page in pages
+                for obj in page.get("Contents", [])
+                if obj["Key"].endswith(".csv")
+            ],
+            reverse=True,
+        )[:10]
 
-    if not all_anomalies:
-        return {"count": 0, "anomalies": []}
+        all_anomalies = []
 
-    combined = pd.concat(all_anomalies).head(limit)
-    return {"count": len(combined), "anomalies": combined.to_dict(orient="records")}
+        for key in keys:
+            response = s3.get_object(Bucket=BUCKET_NAME, Key=key)
+            df = pd.read_csv(io.BytesIO(response["Body"].read()))
 
+            if "anomaly" in df.columns:
+                flagged = df[df["anomaly"] == True].copy()
+                flagged["source_file"] = key
+                all_anomalies.append(flagged)
+
+        if not all_anomalies:
+            return {"count": 0, "anomalies": []}
+
+        combined = pd.concat(all_anomalies).head(limit)
+
+        return {"count": len(combined), "anomalies": combined.to_dict(orient="records")}
+
+    except Exception as e:
+        logger.error(f"Error retrieving anomalies: {str(e)}")
+        return {"error": str(e)}
 
 @app.get("/anomalies/summary")
 def get_anomaly_summary():
@@ -124,7 +146,11 @@ def get_current_baseline():
         "channels": channels,
     }
 
-
 @app.get("/health")
 def health():
-    return {"status": "ok", "bucket": BUCKET_NAME, "timestamp": datetime.utcnow().isoformat()}
+
+    return {
+        "status": "ok",
+        "bucket": BUCKET_NAME,
+        "timestamp": datetime.utcnow().isoformat()
+    }
