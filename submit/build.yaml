@@ -83,6 +83,7 @@ Resources:
     Properties:
       InstanceType: t3.micro
       ImageId: ami-0e86e20dae9224db8  # Ubuntu 24.04 (example)
+      KeyName: DS5220
       IamInstanceProfile: !Ref EC2InstanceProfile
       SecurityGroupIds:
         - !Ref InstanceSecurityGroup
