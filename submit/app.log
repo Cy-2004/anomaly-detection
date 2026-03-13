@@ -1,0 +1,606 @@
+2026-03-12 16:50:57,586 [INFO] Found credentials from IAM Role: anomaly-detection-stack-EC2Role-6I7JnlEcwR7G
+2026-03-12 16:50:59,749 [INFO] Started server process [4136]
+2026-03-12 16:50:59,750 [INFO] Waiting for application startup.
+2026-03-12 16:50:59,751 [INFO] Application startup complete.
+2026-03-12 16:50:59,752 [INFO] Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-12 22:40:49,855 [INFO] Received SNS message
+2026-03-12 22:40:50,010 [INFO] SNS subscription confirmed
+2026-03-12 22:47:15,270 [INFO] Received SNS message
+2026-03-12 22:47:15,271 [INFO] Dispatching processing task for raw/sensors_20260312T224712.csv
+2026-03-12 22:47:15,272 [INFO] Processing file: raw/sensors_20260312T224712.csv
+2026-03-12 22:47:15,360 [INFO] Loaded 100 rows
+2026-03-12 22:47:15,430 [INFO] No existing baseline found
+2026-03-12 22:47:15,433 [INFO] Baseline updated
+2026-03-12 22:47:15,635 [INFO] Uploaded processed file processed/sensors_20260312T224712.csv
+2026-03-12 22:47:15,665 [INFO] Baseline saved
+2026-03-12 22:47:15,665 [INFO] Baseline saved
+2026-03-12 22:47:15,701 [INFO] Log file synced to S3
+2026-03-12 22:48:15,821 [INFO] Received SNS message
+2026-03-12 22:48:15,821 [INFO] Dispatching processing task for raw/sensors_20260312T224813.csv
+2026-03-12 22:48:15,822 [INFO] Processing file: raw/sensors_20260312T224813.csv
+2026-03-12 22:48:15,895 [INFO] Loaded 100 rows
+2026-03-12 22:48:15,968 [INFO] Baseline loaded
+2026-03-12 22:48:15,970 [INFO] Baseline updated
+2026-03-12 22:48:16,158 [INFO] Uploaded processed file processed/sensors_20260312T224813.csv
+2026-03-12 22:48:16,191 [INFO] Baseline saved
+2026-03-12 22:48:16,191 [INFO] Baseline saved
+2026-03-12 22:48:16,216 [INFO] Log file synced to S3
+2026-03-12 22:49:17,145 [INFO] Received SNS message
+2026-03-12 22:49:17,145 [INFO] Dispatching processing task for raw/sensors_20260312T224914.csv
+2026-03-12 22:49:17,146 [INFO] Processing file: raw/sensors_20260312T224914.csv
+2026-03-12 22:49:17,223 [INFO] Loaded 100 rows
+2026-03-12 22:49:17,294 [INFO] Baseline loaded
+2026-03-12 22:49:17,296 [INFO] Baseline updated
+2026-03-12 22:49:17,485 [INFO] Uploaded processed file processed/sensors_20260312T224914.csv
+2026-03-12 22:49:17,513 [INFO] Baseline saved
+2026-03-12 22:49:17,513 [INFO] Baseline saved
+2026-03-12 22:49:17,545 [INFO] Log file synced to S3
+2026-03-12 22:50:17,974 [INFO] Received SNS message
+2026-03-12 22:50:17,974 [INFO] Dispatching processing task for raw/sensors_20260312T225014.csv
+2026-03-12 22:50:17,975 [INFO] Processing file: raw/sensors_20260312T225014.csv
+2026-03-12 22:50:18,058 [INFO] Loaded 100 rows
+2026-03-12 22:50:18,140 [INFO] Baseline loaded
+2026-03-12 22:50:18,142 [INFO] Baseline updated
+2026-03-12 22:50:18,335 [INFO] Uploaded processed file processed/sensors_20260312T225014.csv
+2026-03-12 22:50:18,374 [INFO] Baseline saved
+2026-03-12 22:50:18,374 [INFO] Baseline saved
+2026-03-12 22:50:18,403 [INFO] Log file synced to S3
+2026-03-12 22:51:18,912 [INFO] Received SNS message
+2026-03-12 22:51:18,912 [INFO] Dispatching processing task for raw/sensors_20260312T225115.csv
+2026-03-12 22:51:18,913 [INFO] Processing file: raw/sensors_20260312T225115.csv
+2026-03-12 22:51:18,993 [INFO] Loaded 100 rows
+2026-03-12 22:51:19,069 [INFO] Baseline loaded
+2026-03-12 22:51:19,071 [INFO] Baseline updated
+2026-03-12 22:51:19,279 [INFO] Uploaded processed file processed/sensors_20260312T225115.csv
+2026-03-12 22:51:19,309 [INFO] Baseline saved
+2026-03-12 22:51:19,309 [INFO] Baseline saved
+2026-03-12 22:51:19,344 [INFO] Log file synced to S3
+2026-03-12 22:52:19,405 [INFO] Received SNS message
+2026-03-12 22:52:19,406 [INFO] Dispatching processing task for raw/sensors_20260312T225216.csv
+2026-03-12 22:52:19,407 [INFO] Processing file: raw/sensors_20260312T225216.csv
+2026-03-12 22:52:19,490 [INFO] Loaded 100 rows
+2026-03-12 22:52:19,563 [INFO] Baseline loaded
+2026-03-12 22:52:19,564 [INFO] Baseline updated
+2026-03-12 22:52:19,770 [INFO] Uploaded processed file processed/sensors_20260312T225216.csv
+2026-03-12 22:52:19,800 [INFO] Baseline saved
+2026-03-12 22:52:19,800 [INFO] Baseline saved
+2026-03-12 22:52:19,878 [INFO] Log file synced to S3
+2026-03-12 22:53:19,935 [INFO] Received SNS message
+2026-03-12 22:53:19,935 [INFO] Dispatching processing task for raw/sensors_20260312T225317.csv
+2026-03-12 22:53:19,936 [INFO] Processing file: raw/sensors_20260312T225317.csv
+2026-03-12 22:53:20,015 [INFO] Loaded 100 rows
+2026-03-12 22:53:20,105 [INFO] Baseline loaded
+2026-03-12 22:53:20,106 [INFO] Baseline updated
+2026-03-12 22:53:20,293 [INFO] Uploaded processed file processed/sensors_20260312T225317.csv
+2026-03-12 22:53:20,325 [INFO] Baseline saved
+2026-03-12 22:53:20,325 [INFO] Baseline saved
+2026-03-12 22:53:20,357 [INFO] Log file synced to S3
+2026-03-12 22:54:21,439 [INFO] Received SNS message
+2026-03-12 22:54:21,439 [INFO] Dispatching processing task for raw/sensors_20260312T225418.csv
+2026-03-12 22:54:21,440 [INFO] Processing file: raw/sensors_20260312T225418.csv
+2026-03-12 22:54:21,537 [INFO] Loaded 100 rows
+2026-03-12 22:54:21,621 [INFO] Baseline loaded
+2026-03-12 22:54:21,622 [INFO] Baseline updated
+2026-03-12 22:54:21,815 [INFO] Uploaded processed file processed/sensors_20260312T225418.csv
+2026-03-12 22:54:21,839 [INFO] Baseline saved
+2026-03-12 22:54:21,839 [INFO] Baseline saved
+2026-03-12 22:54:21,867 [INFO] Log file synced to S3
+2026-03-12 23:11:58,690 [INFO] Received SNS message
+2026-03-12 23:11:58,690 [INFO] Dispatching processing task for raw/sensors_20260312T231155.csv
+2026-03-12 23:11:58,691 [INFO] Processing file: raw/sensors_20260312T231155.csv
+2026-03-12 23:11:58,787 [INFO] Loaded 100 rows
+2026-03-12 23:11:58,931 [INFO] Baseline loaded
+2026-03-12 23:11:58,932 [INFO] Baseline updated
+2026-03-12 23:11:59,115 [INFO] Uploaded processed file processed/sensors_20260312T231155.csv
+2026-03-12 23:11:59,144 [INFO] Baseline saved
+2026-03-12 23:11:59,144 [INFO] Baseline saved
+2026-03-12 23:11:59,170 [INFO] Log file synced to S3
+2026-03-12 23:13:00,073 [INFO] Received SNS message
+2026-03-12 23:13:00,074 [INFO] Dispatching processing task for raw/sensors_20260312T231257.csv
+2026-03-12 23:13:00,077 [INFO] Processing file: raw/sensors_20260312T231257.csv
+2026-03-12 23:13:00,179 [INFO] Loaded 100 rows
+2026-03-12 23:13:00,287 [INFO] Baseline loaded
+2026-03-12 23:13:00,288 [INFO] Baseline updated
+2026-03-12 23:13:00,494 [INFO] Uploaded processed file processed/sensors_20260312T231257.csv
+2026-03-12 23:13:00,522 [INFO] Baseline saved
+2026-03-12 23:13:00,522 [INFO] Baseline saved
+2026-03-12 23:13:00,550 [INFO] Log file synced to S3
+2026-03-12 23:14:00,861 [INFO] Received SNS message
+2026-03-12 23:14:00,861 [INFO] Dispatching processing task for raw/sensors_20260312T231358.csv
+2026-03-12 23:14:00,862 [INFO] Processing file: raw/sensors_20260312T231358.csv
+2026-03-12 23:14:00,939 [INFO] Loaded 100 rows
+2026-03-12 23:14:01,010 [INFO] Baseline loaded
+2026-03-12 23:14:01,011 [INFO] Baseline updated
+2026-03-12 23:14:01,202 [INFO] Uploaded processed file processed/sensors_20260312T231358.csv
+2026-03-12 23:14:01,232 [INFO] Baseline saved
+2026-03-12 23:14:01,232 [INFO] Baseline saved
+2026-03-12 23:14:01,274 [INFO] Log file synced to S3
+2026-03-12 23:15:02,042 [INFO] Received SNS message
+2026-03-12 23:15:02,042 [INFO] Dispatching processing task for raw/sensors_20260312T231459.csv
+2026-03-12 23:15:02,044 [INFO] Processing file: raw/sensors_20260312T231459.csv
+2026-03-12 23:15:02,351 [INFO] Loaded 100 rows
+2026-03-12 23:15:02,553 [INFO] Baseline loaded
+2026-03-12 23:15:02,555 [INFO] Baseline updated
+2026-03-12 23:15:02,926 [INFO] Uploaded processed file processed/sensors_20260312T231459.csv
+2026-03-12 23:15:02,960 [INFO] Baseline saved
+2026-03-12 23:15:02,960 [INFO] Baseline saved
+2026-03-12 23:15:02,994 [INFO] Log file synced to S3
+2026-03-12 23:16:02,926 [INFO] Received SNS message
+2026-03-12 23:16:02,926 [INFO] Dispatching processing task for raw/sensors_20260312T231559.csv
+2026-03-12 23:16:02,927 [INFO] Processing file: raw/sensors_20260312T231559.csv
+2026-03-12 23:16:03,003 [INFO] Loaded 100 rows
+2026-03-12 23:16:03,104 [INFO] Baseline loaded
+2026-03-12 23:16:03,106 [INFO] Baseline updated
+2026-03-12 23:16:03,303 [INFO] Uploaded processed file processed/sensors_20260312T231559.csv
+2026-03-12 23:16:03,329 [INFO] Baseline saved
+2026-03-12 23:16:03,329 [INFO] Baseline saved
+2026-03-12 23:16:03,358 [INFO] Log file synced to S3
+2026-03-12 23:17:03,090 [INFO] Received SNS message
+2026-03-12 23:17:03,090 [INFO] Dispatching processing task for raw/sensors_20260312T231700.csv
+2026-03-12 23:17:03,092 [INFO] Processing file: raw/sensors_20260312T231700.csv
+2026-03-12 23:17:03,170 [INFO] Loaded 100 rows
+2026-03-12 23:17:03,248 [INFO] Baseline loaded
+2026-03-12 23:17:03,250 [INFO] Baseline updated
+2026-03-12 23:17:03,469 [INFO] Uploaded processed file processed/sensors_20260312T231700.csv
+2026-03-12 23:17:03,503 [INFO] Baseline saved
+2026-03-12 23:17:03,503 [INFO] Baseline saved
+2026-03-12 23:17:03,531 [INFO] Log file synced to S3
+2026-03-12 23:18:04,484 [INFO] Received SNS message
+2026-03-12 23:18:04,485 [INFO] Dispatching processing task for raw/sensors_20260312T231801.csv
+2026-03-12 23:18:04,486 [INFO] Processing file: raw/sensors_20260312T231801.csv
+2026-03-12 23:18:04,562 [INFO] Loaded 100 rows
+2026-03-12 23:18:04,634 [INFO] Baseline loaded
+2026-03-12 23:18:04,635 [INFO] Baseline updated
+2026-03-12 23:18:04,824 [INFO] Uploaded processed file processed/sensors_20260312T231801.csv
+2026-03-12 23:18:04,855 [INFO] Baseline saved
+2026-03-12 23:18:04,855 [INFO] Baseline saved
+2026-03-12 23:18:04,882 [INFO] Log file synced to S3
+2026-03-12 23:27:35,305 [INFO] Received SNS message
+2026-03-12 23:27:35,305 [INFO] Dispatching processing task for raw/sensors_20260312T232730.csv
+2026-03-12 23:27:35,306 [INFO] Processing file: raw/sensors_20260312T232730.csv
+2026-03-12 23:27:35,386 [INFO] Loaded 100 rows
+2026-03-12 23:27:35,492 [INFO] Baseline loaded
+2026-03-12 23:27:35,493 [INFO] Baseline updated
+2026-03-12 23:27:35,683 [INFO] Uploaded processed file processed/sensors_20260312T232730.csv
+2026-03-12 23:27:35,713 [INFO] Baseline saved
+2026-03-12 23:27:35,713 [INFO] Baseline saved
+2026-03-12 23:27:35,741 [INFO] Log file synced to S3
+2026-03-12 23:28:35,902 [INFO] Received SNS message
+2026-03-12 23:28:35,903 [INFO] Dispatching processing task for raw/sensors_20260312T232833.csv
+2026-03-12 23:28:35,904 [INFO] Processing file: raw/sensors_20260312T232833.csv
+2026-03-12 23:28:35,977 [INFO] Loaded 100 rows
+2026-03-12 23:28:36,076 [INFO] Baseline loaded
+2026-03-12 23:28:36,077 [INFO] Baseline updated
+2026-03-12 23:28:36,266 [INFO] Uploaded processed file processed/sensors_20260312T232833.csv
+2026-03-12 23:28:36,300 [INFO] Baseline saved
+2026-03-12 23:28:36,300 [INFO] Baseline saved
+2026-03-12 23:28:36,333 [INFO] Log file synced to S3
+2026-03-12 23:29:37,276 [INFO] Received SNS message
+2026-03-12 23:29:37,276 [INFO] Dispatching processing task for raw/sensors_20260312T232934.csv
+2026-03-12 23:29:37,277 [INFO] Processing file: raw/sensors_20260312T232934.csv
+2026-03-12 23:29:37,354 [INFO] Loaded 100 rows
+2026-03-12 23:29:37,427 [INFO] Baseline loaded
+2026-03-12 23:29:37,429 [INFO] Baseline updated
+2026-03-12 23:29:37,621 [INFO] Uploaded processed file processed/sensors_20260312T232934.csv
+2026-03-12 23:29:37,647 [INFO] Baseline saved
+2026-03-12 23:29:37,647 [INFO] Baseline saved
+2026-03-12 23:29:37,681 [INFO] Log file synced to S3
+2026-03-12 23:30:37,746 [INFO] Received SNS message
+2026-03-12 23:30:37,746 [INFO] Dispatching processing task for raw/sensors_20260312T233034.csv
+2026-03-12 23:30:37,747 [INFO] Processing file: raw/sensors_20260312T233034.csv
+2026-03-12 23:30:37,824 [INFO] Loaded 100 rows
+2026-03-12 23:30:37,895 [INFO] Baseline loaded
+2026-03-12 23:30:37,897 [INFO] Baseline updated
+2026-03-12 23:30:38,086 [INFO] Uploaded processed file processed/sensors_20260312T233034.csv
+2026-03-12 23:30:38,116 [INFO] Baseline saved
+2026-03-12 23:30:38,116 [INFO] Baseline saved
+2026-03-12 23:30:38,148 [INFO] Log file synced to S3
+2026-03-12 23:31:39,147 [INFO] Received SNS message
+2026-03-12 23:31:39,147 [INFO] Dispatching processing task for raw/sensors_20260312T233136.csv
+2026-03-12 23:31:39,148 [INFO] Processing file: raw/sensors_20260312T233136.csv
+2026-03-12 23:31:39,225 [INFO] Loaded 100 rows
+2026-03-12 23:31:39,307 [INFO] Baseline loaded
+2026-03-12 23:31:39,308 [INFO] Baseline updated
+2026-03-12 23:31:39,498 [INFO] Uploaded processed file processed/sensors_20260312T233136.csv
+2026-03-12 23:31:39,526 [INFO] Baseline saved
+2026-03-12 23:31:39,526 [INFO] Baseline saved
+2026-03-12 23:31:39,570 [INFO] Log file synced to S3
+2026-03-12 23:32:39,635 [INFO] Received SNS message
+2026-03-12 23:32:39,635 [INFO] Dispatching processing task for raw/sensors_20260312T233237.csv
+2026-03-12 23:32:39,636 [INFO] Processing file: raw/sensors_20260312T233237.csv
+2026-03-12 23:32:39,712 [INFO] Loaded 100 rows
+2026-03-12 23:32:39,784 [INFO] Baseline loaded
+2026-03-12 23:32:39,785 [INFO] Baseline updated
+2026-03-12 23:32:40,010 [INFO] Uploaded processed file processed/sensors_20260312T233237.csv
+2026-03-12 23:32:40,038 [INFO] Baseline saved
+2026-03-12 23:32:40,038 [INFO] Baseline saved
+2026-03-12 23:32:40,069 [INFO] Log file synced to S3
+2026-03-12 23:33:45,236 [INFO] Received SNS message
+2026-03-12 23:33:45,236 [INFO] Dispatching processing task for raw/sensors_20260312T233342.csv
+2026-03-12 23:33:45,237 [INFO] Processing file: raw/sensors_20260312T233342.csv
+2026-03-12 23:33:45,313 [INFO] Loaded 100 rows
+2026-03-12 23:33:45,424 [INFO] Baseline loaded
+2026-03-12 23:33:45,425 [INFO] Baseline updated
+2026-03-12 23:33:45,615 [INFO] Uploaded processed file processed/sensors_20260312T233342.csv
+2026-03-12 23:33:45,664 [INFO] Baseline saved
+2026-03-12 23:33:45,664 [INFO] Baseline saved
+2026-03-12 23:33:45,700 [INFO] Log file synced to S3
+2026-03-12 23:34:45,656 [INFO] Received SNS message
+2026-03-12 23:34:45,656 [INFO] Dispatching processing task for raw/sensors_20260312T233443.csv
+2026-03-12 23:34:45,657 [INFO] Processing file: raw/sensors_20260312T233443.csv
+2026-03-12 23:34:45,733 [INFO] Loaded 100 rows
+2026-03-12 23:34:45,813 [INFO] Baseline loaded
+2026-03-12 23:34:45,814 [INFO] Baseline updated
+2026-03-12 23:34:46,003 [INFO] Uploaded processed file processed/sensors_20260312T233443.csv
+2026-03-12 23:34:46,034 [INFO] Baseline saved
+2026-03-12 23:34:46,034 [INFO] Baseline saved
+2026-03-12 23:34:46,065 [INFO] Log file synced to S3
+2026-03-12 23:35:46,911 [INFO] Received SNS message
+2026-03-12 23:35:46,911 [INFO] Dispatching processing task for raw/sensors_20260312T233544.csv
+2026-03-12 23:35:46,914 [INFO] Processing file: raw/sensors_20260312T233544.csv
+2026-03-12 23:35:46,997 [INFO] Loaded 100 rows
+2026-03-12 23:35:47,077 [INFO] Baseline loaded
+2026-03-12 23:35:47,078 [INFO] Baseline updated
+2026-03-12 23:35:47,271 [INFO] Uploaded processed file processed/sensors_20260312T233544.csv
+2026-03-12 23:35:47,302 [INFO] Baseline saved
+2026-03-12 23:35:47,302 [INFO] Baseline saved
+2026-03-12 23:35:47,334 [INFO] Log file synced to S3
+2026-03-12 23:36:47,449 [INFO] Received SNS message
+2026-03-12 23:36:47,449 [INFO] Dispatching processing task for raw/sensors_20260312T233644.csv
+2026-03-12 23:36:47,450 [INFO] Processing file: raw/sensors_20260312T233644.csv
+2026-03-12 23:36:47,532 [INFO] Loaded 100 rows
+2026-03-12 23:36:47,610 [INFO] Baseline loaded
+2026-03-12 23:36:47,611 [INFO] Baseline updated
+2026-03-12 23:36:47,812 [INFO] Uploaded processed file processed/sensors_20260312T233644.csv
+2026-03-12 23:36:47,842 [INFO] Baseline saved
+2026-03-12 23:36:47,842 [INFO] Baseline saved
+2026-03-12 23:36:47,887 [INFO] Log file synced to S3
+2026-03-12 23:37:48,867 [INFO] Received SNS message
+2026-03-12 23:37:48,868 [INFO] Dispatching processing task for raw/sensors_20260312T233746.csv
+2026-03-12 23:37:48,869 [INFO] Processing file: raw/sensors_20260312T233746.csv
+2026-03-12 23:37:48,950 [INFO] Loaded 100 rows
+2026-03-12 23:37:49,035 [INFO] Baseline loaded
+2026-03-12 23:37:49,036 [INFO] Baseline updated
+2026-03-12 23:37:49,231 [INFO] Uploaded processed file processed/sensors_20260312T233746.csv
+2026-03-12 23:37:49,270 [INFO] Baseline saved
+2026-03-12 23:37:49,270 [INFO] Baseline saved
+2026-03-12 23:37:49,302 [INFO] Log file synced to S3
+2026-03-12 23:38:52,034 [INFO] Received SNS message
+2026-03-12 23:38:52,034 [INFO] Dispatching processing task for raw/sensors_20260312T233847.csv
+2026-03-12 23:38:52,035 [INFO] Processing file: raw/sensors_20260312T233847.csv
+2026-03-12 23:38:52,120 [INFO] Loaded 100 rows
+2026-03-12 23:38:52,196 [INFO] Baseline loaded
+2026-03-12 23:38:52,197 [INFO] Baseline updated
+2026-03-12 23:38:52,388 [INFO] Uploaded processed file processed/sensors_20260312T233847.csv
+2026-03-12 23:38:52,416 [INFO] Baseline saved
+2026-03-12 23:38:52,416 [INFO] Baseline saved
+2026-03-12 23:38:52,450 [INFO] Log file synced to S3
+2026-03-12 23:39:52,515 [INFO] Received SNS message
+2026-03-12 23:39:52,515 [INFO] Dispatching processing task for raw/sensors_20260312T233950.csv
+2026-03-12 23:39:52,516 [INFO] Processing file: raw/sensors_20260312T233950.csv
+2026-03-12 23:39:52,594 [INFO] Loaded 100 rows
+2026-03-12 23:39:52,663 [INFO] Baseline loaded
+2026-03-12 23:39:52,664 [INFO] Baseline updated
+2026-03-12 23:39:52,859 [INFO] Uploaded processed file processed/sensors_20260312T233950.csv
+2026-03-12 23:39:52,891 [INFO] Baseline saved
+2026-03-12 23:39:52,891 [INFO] Baseline saved
+2026-03-12 23:39:52,920 [INFO] Log file synced to S3
+2026-03-12 23:40:58,120 [INFO] Received SNS message
+2026-03-12 23:40:58,120 [INFO] Dispatching processing task for raw/sensors_20260312T234051.csv
+2026-03-12 23:40:58,121 [INFO] Processing file: raw/sensors_20260312T234051.csv
+2026-03-12 23:40:58,199 [INFO] Loaded 100 rows
+2026-03-12 23:40:58,272 [INFO] Baseline loaded
+2026-03-12 23:40:58,273 [INFO] Baseline updated
+2026-03-12 23:40:58,463 [INFO] Uploaded processed file processed/sensors_20260312T234051.csv
+2026-03-12 23:40:58,493 [INFO] Baseline saved
+2026-03-12 23:40:58,493 [INFO] Baseline saved
+2026-03-12 23:40:58,525 [INFO] Log file synced to S3
+2026-03-12 23:41:58,657 [INFO] Received SNS message
+2026-03-12 23:41:58,657 [INFO] Dispatching processing task for raw/sensors_20260312T234156.csv
+2026-03-12 23:41:58,658 [INFO] Processing file: raw/sensors_20260312T234156.csv
+2026-03-12 23:41:58,737 [INFO] Loaded 100 rows
+2026-03-12 23:41:58,810 [INFO] Baseline loaded
+2026-03-12 23:41:58,811 [INFO] Baseline updated
+2026-03-12 23:41:59,004 [INFO] Uploaded processed file processed/sensors_20260312T234156.csv
+2026-03-12 23:41:59,033 [INFO] Baseline saved
+2026-03-12 23:41:59,033 [INFO] Baseline saved
+2026-03-12 23:41:59,068 [INFO] Log file synced to S3
+2026-03-12 23:43:00,772 [INFO] Received SNS message
+2026-03-12 23:43:00,773 [INFO] Dispatching processing task for raw/sensors_20260312T234257.csv
+2026-03-12 23:43:00,774 [INFO] Processing file: raw/sensors_20260312T234257.csv
+2026-03-12 23:43:00,853 [INFO] Loaded 100 rows
+2026-03-12 23:43:00,951 [INFO] Baseline loaded
+2026-03-12 23:43:00,952 [INFO] Baseline updated
+2026-03-12 23:43:01,144 [INFO] Uploaded processed file processed/sensors_20260312T234257.csv
+2026-03-12 23:43:01,175 [INFO] Baseline saved
+2026-03-12 23:43:01,175 [INFO] Baseline saved
+2026-03-12 23:43:01,206 [INFO] Log file synced to S3
+2026-03-12 23:44:02,185 [INFO] Received SNS message
+2026-03-12 23:44:02,186 [INFO] Dispatching processing task for raw/sensors_20260312T234359.csv
+2026-03-12 23:44:02,188 [INFO] Processing file: raw/sensors_20260312T234359.csv
+2026-03-12 23:44:02,299 [INFO] Loaded 100 rows
+2026-03-12 23:44:02,420 [INFO] Baseline loaded
+2026-03-12 23:44:02,422 [INFO] Baseline updated
+2026-03-12 23:44:02,708 [INFO] Uploaded processed file processed/sensors_20260312T234359.csv
+2026-03-12 23:44:02,736 [INFO] Baseline saved
+2026-03-12 23:44:02,737 [INFO] Baseline saved
+2026-03-12 23:44:02,769 [INFO] Log file synced to S3
+2026-03-12 23:45:02,693 [INFO] Received SNS message
+2026-03-12 23:45:02,693 [INFO] Dispatching processing task for raw/sensors_20260312T234459.csv
+2026-03-12 23:45:02,694 [INFO] Processing file: raw/sensors_20260312T234459.csv
+2026-03-12 23:45:02,788 [INFO] Loaded 100 rows
+2026-03-12 23:45:02,860 [INFO] Baseline loaded
+2026-03-12 23:45:02,861 [INFO] Baseline updated
+2026-03-12 23:45:03,053 [INFO] Uploaded processed file processed/sensors_20260312T234459.csv
+2026-03-12 23:45:03,081 [INFO] Baseline saved
+2026-03-12 23:45:03,081 [INFO] Baseline saved
+2026-03-12 23:45:03,115 [INFO] Log file synced to S3
+2026-03-12 23:46:03,173 [INFO] Received SNS message
+2026-03-12 23:46:03,173 [INFO] Dispatching processing task for raw/sensors_20260312T234600.csv
+2026-03-12 23:46:03,174 [INFO] Processing file: raw/sensors_20260312T234600.csv
+2026-03-12 23:46:03,255 [INFO] Loaded 100 rows
+2026-03-12 23:46:03,333 [INFO] Baseline loaded
+2026-03-12 23:46:03,334 [INFO] Baseline updated
+2026-03-12 23:46:03,533 [INFO] Uploaded processed file processed/sensors_20260312T234600.csv
+2026-03-12 23:46:03,563 [INFO] Baseline saved
+2026-03-12 23:46:03,563 [INFO] Baseline saved
+2026-03-12 23:46:03,590 [INFO] Log file synced to S3
+2026-03-12 23:47:04,514 [INFO] Received SNS message
+2026-03-12 23:47:04,514 [INFO] Dispatching processing task for raw/sensors_20260312T234701.csv
+2026-03-12 23:47:04,515 [INFO] Processing file: raw/sensors_20260312T234701.csv
+2026-03-12 23:47:04,593 [INFO] Loaded 100 rows
+2026-03-12 23:47:04,667 [INFO] Baseline loaded
+2026-03-12 23:47:04,668 [INFO] Baseline updated
+2026-03-12 23:47:04,858 [INFO] Uploaded processed file processed/sensors_20260312T234701.csv
+2026-03-12 23:47:04,892 [INFO] Baseline saved
+2026-03-12 23:47:04,892 [INFO] Baseline saved
+2026-03-12 23:47:04,920 [INFO] Log file synced to S3
+2026-03-12 23:48:05,180 [INFO] Received SNS message
+2026-03-12 23:48:05,180 [INFO] Dispatching processing task for raw/sensors_20260312T234802.csv
+2026-03-12 23:48:05,181 [INFO] Processing file: raw/sensors_20260312T234802.csv
+2026-03-12 23:48:05,272 [INFO] Loaded 100 rows
+2026-03-12 23:48:05,351 [INFO] Baseline loaded
+2026-03-12 23:48:05,352 [INFO] Baseline updated
+2026-03-12 23:48:05,610 [INFO] Uploaded processed file processed/sensors_20260312T234802.csv
+2026-03-12 23:48:05,638 [INFO] Baseline saved
+2026-03-12 23:48:05,638 [INFO] Baseline saved
+2026-03-12 23:48:05,672 [INFO] Log file synced to S3
+2026-03-12 23:49:06,400 [INFO] Received SNS message
+2026-03-12 23:49:06,400 [INFO] Dispatching processing task for raw/sensors_20260312T234903.csv
+2026-03-12 23:49:06,401 [INFO] Processing file: raw/sensors_20260312T234903.csv
+2026-03-12 23:49:06,476 [INFO] Loaded 100 rows
+2026-03-12 23:49:06,547 [INFO] Baseline loaded
+2026-03-12 23:49:06,548 [INFO] Baseline updated
+2026-03-12 23:49:06,738 [INFO] Uploaded processed file processed/sensors_20260312T234903.csv
+2026-03-12 23:49:06,768 [INFO] Baseline saved
+2026-03-12 23:49:06,768 [INFO] Baseline saved
+2026-03-12 23:49:06,801 [INFO] Log file synced to S3
+2026-03-12 23:50:07,006 [INFO] Received SNS message
+2026-03-12 23:50:07,006 [INFO] Dispatching processing task for raw/sensors_20260312T235004.csv
+2026-03-12 23:50:07,007 [INFO] Processing file: raw/sensors_20260312T235004.csv
+2026-03-12 23:50:07,083 [INFO] Loaded 100 rows
+2026-03-12 23:50:07,226 [INFO] Baseline loaded
+2026-03-12 23:50:07,227 [INFO] Baseline updated
+2026-03-12 23:50:07,424 [INFO] Uploaded processed file processed/sensors_20260312T235004.csv
+2026-03-12 23:50:07,449 [INFO] Baseline saved
+2026-03-12 23:50:07,449 [INFO] Baseline saved
+2026-03-12 23:50:07,475 [INFO] Log file synced to S3
+2026-03-12 23:51:08,101 [INFO] Received SNS message
+2026-03-12 23:51:08,101 [INFO] Dispatching processing task for raw/sensors_20260312T235105.csv
+2026-03-12 23:51:08,102 [INFO] Processing file: raw/sensors_20260312T235105.csv
+2026-03-12 23:51:08,180 [INFO] Loaded 100 rows
+2026-03-12 23:51:08,288 [INFO] Baseline loaded
+2026-03-12 23:51:08,289 [INFO] Baseline updated
+2026-03-12 23:51:08,483 [INFO] Uploaded processed file processed/sensors_20260312T235105.csv
+2026-03-12 23:51:08,532 [INFO] Baseline saved
+2026-03-12 23:51:08,532 [INFO] Baseline saved
+2026-03-12 23:51:08,564 [INFO] Log file synced to S3
+2026-03-12 23:52:08,750 [INFO] Received SNS message
+2026-03-12 23:52:08,750 [INFO] Dispatching processing task for raw/sensors_20260312T235206.csv
+2026-03-12 23:52:08,751 [INFO] Processing file: raw/sensors_20260312T235206.csv
+2026-03-12 23:52:08,828 [INFO] Loaded 100 rows
+2026-03-12 23:52:08,915 [INFO] Baseline loaded
+2026-03-12 23:52:08,916 [INFO] Baseline updated
+2026-03-12 23:52:09,108 [INFO] Uploaded processed file processed/sensors_20260312T235206.csv
+2026-03-12 23:52:09,141 [INFO] Baseline saved
+2026-03-12 23:52:09,141 [INFO] Baseline saved
+2026-03-12 23:52:09,167 [INFO] Log file synced to S3
+2026-03-12 23:53:09,256 [INFO] Received SNS message
+2026-03-12 23:53:09,256 [INFO] Dispatching processing task for raw/sensors_20260312T235306.csv
+2026-03-12 23:53:09,257 [INFO] Processing file: raw/sensors_20260312T235306.csv
+2026-03-12 23:53:09,329 [INFO] Loaded 100 rows
+2026-03-12 23:53:09,403 [INFO] Baseline loaded
+2026-03-12 23:53:09,404 [INFO] Baseline updated
+2026-03-12 23:53:09,600 [INFO] Uploaded processed file processed/sensors_20260312T235306.csv
+2026-03-12 23:53:09,630 [INFO] Baseline saved
+2026-03-12 23:53:09,630 [INFO] Baseline saved
+2026-03-12 23:53:09,660 [INFO] Log file synced to S3
+2026-03-12 23:54:12,851 [INFO] Received SNS message
+2026-03-12 23:54:12,851 [INFO] Dispatching processing task for raw/sensors_20260312T235407.csv
+2026-03-12 23:54:12,852 [INFO] Processing file: raw/sensors_20260312T235407.csv
+2026-03-12 23:54:12,927 [INFO] Loaded 100 rows
+2026-03-12 23:54:13,006 [INFO] Baseline loaded
+2026-03-12 23:54:13,007 [INFO] Baseline updated
+2026-03-12 23:54:13,211 [INFO] Uploaded processed file processed/sensors_20260312T235407.csv
+2026-03-12 23:54:13,245 [INFO] Baseline saved
+2026-03-12 23:54:13,245 [INFO] Baseline saved
+2026-03-12 23:54:13,276 [INFO] Log file synced to S3
+2026-03-12 23:55:11,108 [INFO] Received SNS message
+2026-03-12 23:55:11,108 [INFO] Dispatching processing task for raw/sensors_20260312T235508.csv
+2026-03-12 23:55:11,110 [INFO] Processing file: raw/sensors_20260312T235508.csv
+2026-03-12 23:55:11,188 [INFO] Loaded 100 rows
+2026-03-12 23:55:11,262 [INFO] Baseline loaded
+2026-03-12 23:55:11,264 [INFO] Baseline updated
+2026-03-12 23:55:11,456 [INFO] Uploaded processed file processed/sensors_20260312T235508.csv
+2026-03-12 23:55:11,490 [INFO] Baseline saved
+2026-03-12 23:55:11,490 [INFO] Baseline saved
+2026-03-12 23:55:11,521 [INFO] Log file synced to S3
+2026-03-12 23:56:12,497 [INFO] Received SNS message
+2026-03-12 23:56:12,497 [INFO] Dispatching processing task for raw/sensors_20260312T235609.csv
+2026-03-12 23:56:12,499 [INFO] Processing file: raw/sensors_20260312T235609.csv
+2026-03-12 23:56:12,591 [INFO] Loaded 100 rows
+2026-03-12 23:56:12,664 [INFO] Baseline loaded
+2026-03-12 23:56:12,665 [INFO] Baseline updated
+2026-03-12 23:56:12,856 [INFO] Uploaded processed file processed/sensors_20260312T235609.csv
+2026-03-12 23:56:12,886 [INFO] Baseline saved
+2026-03-12 23:56:12,886 [INFO] Baseline saved
+2026-03-12 23:56:12,917 [INFO] Log file synced to S3
+2026-03-12 23:57:13,908 [INFO] Received SNS message
+2026-03-12 23:57:13,908 [INFO] Dispatching processing task for raw/sensors_20260312T235710.csv
+2026-03-12 23:57:13,909 [INFO] Processing file: raw/sensors_20260312T235710.csv
+2026-03-12 23:57:13,987 [INFO] Loaded 100 rows
+2026-03-12 23:57:14,060 [INFO] Baseline loaded
+2026-03-12 23:57:14,061 [INFO] Baseline updated
+2026-03-12 23:57:14,272 [INFO] Uploaded processed file processed/sensors_20260312T235710.csv
+2026-03-12 23:57:14,301 [INFO] Baseline saved
+2026-03-12 23:57:14,301 [INFO] Baseline saved
+2026-03-12 23:57:14,365 [INFO] Log file synced to S3
+2026-03-12 23:58:14,517 [INFO] Received SNS message
+2026-03-12 23:58:14,518 [INFO] Dispatching processing task for raw/sensors_20260312T235811.csv
+2026-03-12 23:58:14,519 [INFO] Processing file: raw/sensors_20260312T235811.csv
+2026-03-12 23:58:14,597 [INFO] Loaded 100 rows
+2026-03-12 23:58:14,697 [INFO] Baseline loaded
+2026-03-12 23:58:14,699 [INFO] Baseline updated
+2026-03-12 23:58:14,887 [INFO] Uploaded processed file processed/sensors_20260312T235811.csv
+2026-03-12 23:58:14,914 [INFO] Baseline saved
+2026-03-12 23:58:14,914 [INFO] Baseline saved
+2026-03-12 23:58:14,942 [INFO] Log file synced to S3
+2026-03-12 23:59:15,841 [INFO] Received SNS message
+2026-03-12 23:59:15,841 [INFO] Dispatching processing task for raw/sensors_20260312T235912.csv
+2026-03-12 23:59:15,843 [INFO] Processing file: raw/sensors_20260312T235912.csv
+2026-03-12 23:59:15,918 [INFO] Loaded 100 rows
+2026-03-12 23:59:16,084 [INFO] Baseline loaded
+2026-03-12 23:59:16,085 [INFO] Baseline updated
+2026-03-12 23:59:16,294 [INFO] Uploaded processed file processed/sensors_20260312T235912.csv
+2026-03-12 23:59:16,322 [INFO] Baseline saved
+2026-03-12 23:59:16,322 [INFO] Baseline saved
+2026-03-12 23:59:16,350 [INFO] Log file synced to S3
+2026-03-13 00:00:16,582 [INFO] Received SNS message
+2026-03-13 00:00:16,582 [INFO] Dispatching processing task for raw/sensors_20260313T000013.csv
+2026-03-13 00:00:16,583 [INFO] Processing file: raw/sensors_20260313T000013.csv
+2026-03-13 00:00:16,674 [INFO] Loaded 100 rows
+2026-03-13 00:00:16,767 [INFO] Baseline loaded
+2026-03-13 00:00:16,768 [INFO] Baseline updated
+2026-03-13 00:00:16,986 [INFO] Uploaded processed file processed/sensors_20260313T000013.csv
+2026-03-13 00:00:17,011 [INFO] Baseline saved
+2026-03-13 00:00:17,012 [INFO] Baseline saved
+2026-03-13 00:00:17,098 [INFO] Log file synced to S3
+2026-03-13 00:01:17,811 [INFO] Received SNS message
+2026-03-13 00:01:17,811 [INFO] Dispatching processing task for raw/sensors_20260313T000114.csv
+2026-03-13 00:01:17,812 [INFO] Processing file: raw/sensors_20260313T000114.csv
+2026-03-13 00:01:17,888 [INFO] Loaded 100 rows
+2026-03-13 00:01:17,983 [INFO] Baseline loaded
+2026-03-13 00:01:17,984 [INFO] Baseline updated
+2026-03-13 00:01:18,174 [INFO] Uploaded processed file processed/sensors_20260313T000114.csv
+2026-03-13 00:01:18,203 [INFO] Baseline saved
+2026-03-13 00:01:18,203 [INFO] Baseline saved
+2026-03-13 00:01:18,247 [INFO] Log file synced to S3
+2026-03-13 00:02:18,506 [INFO] Received SNS message
+2026-03-13 00:02:18,506 [INFO] Dispatching processing task for raw/sensors_20260313T000215.csv
+2026-03-13 00:02:18,507 [INFO] Processing file: raw/sensors_20260313T000215.csv
+2026-03-13 00:02:18,587 [INFO] Loaded 100 rows
+2026-03-13 00:02:18,681 [INFO] Baseline loaded
+2026-03-13 00:02:18,682 [INFO] Baseline updated
+2026-03-13 00:02:18,878 [INFO] Uploaded processed file processed/sensors_20260313T000215.csv
+2026-03-13 00:02:18,908 [INFO] Baseline saved
+2026-03-13 00:02:18,908 [INFO] Baseline saved
+2026-03-13 00:02:18,942 [INFO] Log file synced to S3
+2026-03-13 00:03:18,976 [INFO] Received SNS message
+2026-03-13 00:03:18,976 [INFO] Dispatching processing task for raw/sensors_20260313T000316.csv
+2026-03-13 00:03:18,978 [INFO] Processing file: raw/sensors_20260313T000316.csv
+2026-03-13 00:03:19,057 [INFO] Loaded 100 rows
+2026-03-13 00:03:19,141 [INFO] Baseline loaded
+2026-03-13 00:03:19,142 [INFO] Baseline updated
+2026-03-13 00:03:19,330 [INFO] Uploaded processed file processed/sensors_20260313T000316.csv
+2026-03-13 00:03:19,359 [INFO] Baseline saved
+2026-03-13 00:03:19,359 [INFO] Baseline saved
+2026-03-13 00:03:19,387 [INFO] Log file synced to S3
+2026-03-13 00:04:20,533 [INFO] Received SNS message
+2026-03-13 00:04:20,534 [INFO] Dispatching processing task for raw/sensors_20260313T000417.csv
+2026-03-13 00:04:20,535 [INFO] Processing file: raw/sensors_20260313T000417.csv
+2026-03-13 00:04:20,614 [INFO] Loaded 100 rows
+2026-03-13 00:04:20,717 [INFO] Baseline loaded
+2026-03-13 00:04:20,719 [INFO] Baseline updated
+2026-03-13 00:04:20,908 [INFO] Uploaded processed file processed/sensors_20260313T000417.csv
+2026-03-13 00:04:20,947 [INFO] Baseline saved
+2026-03-13 00:04:20,947 [INFO] Baseline saved
+2026-03-13 00:04:20,980 [INFO] Log file synced to S3
+2026-03-13 00:05:21,717 [INFO] Received SNS message
+2026-03-13 00:05:21,717 [INFO] Dispatching processing task for raw/sensors_20260313T000518.csv
+2026-03-13 00:05:21,720 [INFO] Processing file: raw/sensors_20260313T000518.csv
+2026-03-13 00:05:21,796 [INFO] Loaded 100 rows
+2026-03-13 00:05:21,866 [INFO] Baseline loaded
+2026-03-13 00:05:21,867 [INFO] Baseline updated
+2026-03-13 00:05:22,059 [INFO] Uploaded processed file processed/sensors_20260313T000518.csv
+2026-03-13 00:05:22,087 [INFO] Baseline saved
+2026-03-13 00:05:22,087 [INFO] Baseline saved
+2026-03-13 00:05:22,121 [INFO] Log file synced to S3
+2026-03-13 00:06:22,247 [INFO] Received SNS message
+2026-03-13 00:06:22,247 [INFO] Dispatching processing task for raw/sensors_20260313T000619.csv
+2026-03-13 00:06:22,248 [INFO] Processing file: raw/sensors_20260313T000619.csv
+2026-03-13 00:06:22,323 [INFO] Loaded 100 rows
+2026-03-13 00:06:22,484 [INFO] Baseline loaded
+2026-03-13 00:06:22,485 [INFO] Baseline updated
+2026-03-13 00:06:22,680 [INFO] Uploaded processed file processed/sensors_20260313T000619.csv
+2026-03-13 00:06:22,711 [INFO] Baseline saved
+2026-03-13 00:06:22,711 [INFO] Baseline saved
+2026-03-13 00:06:22,743 [INFO] Log file synced to S3
+2026-03-13 00:07:23,490 [INFO] Received SNS message
+2026-03-13 00:07:23,490 [INFO] Dispatching processing task for raw/sensors_20260313T000720.csv
+2026-03-13 00:07:23,491 [INFO] Processing file: raw/sensors_20260313T000720.csv
+2026-03-13 00:07:23,581 [INFO] Loaded 100 rows
+2026-03-13 00:07:23,714 [INFO] Baseline loaded
+2026-03-13 00:07:23,715 [INFO] Baseline updated
+2026-03-13 00:07:23,917 [INFO] Uploaded processed file processed/sensors_20260313T000720.csv
+2026-03-13 00:07:23,947 [INFO] Baseline saved
+2026-03-13 00:07:23,947 [INFO] Baseline saved
+2026-03-13 00:07:23,984 [INFO] Log file synced to S3
+2026-03-13 00:08:24,172 [INFO] Received SNS message
+2026-03-13 00:08:24,172 [INFO] Dispatching processing task for raw/sensors_20260313T000821.csv
+2026-03-13 00:08:24,173 [INFO] Processing file: raw/sensors_20260313T000821.csv
+2026-03-13 00:08:24,247 [INFO] Loaded 100 rows
+2026-03-13 00:08:24,342 [INFO] Baseline loaded
+2026-03-13 00:08:24,343 [INFO] Baseline updated
+2026-03-13 00:08:24,531 [INFO] Uploaded processed file processed/sensors_20260313T000821.csv
+2026-03-13 00:08:24,559 [INFO] Baseline saved
+2026-03-13 00:08:24,559 [INFO] Baseline saved
+2026-03-13 00:08:24,588 [INFO] Log file synced to S3
+2026-03-13 00:09:25,496 [INFO] Received SNS message
+2026-03-13 00:09:25,496 [INFO] Dispatching processing task for raw/sensors_20260313T000922.csv
+2026-03-13 00:09:25,497 [INFO] Processing file: raw/sensors_20260313T000922.csv
+2026-03-13 00:09:25,577 [INFO] Loaded 100 rows
+2026-03-13 00:09:25,659 [INFO] Baseline loaded
+2026-03-13 00:09:25,660 [INFO] Baseline updated
+2026-03-13 00:09:25,853 [INFO] Uploaded processed file processed/sensors_20260313T000922.csv
+2026-03-13 00:09:25,899 [INFO] Baseline saved
+2026-03-13 00:09:25,900 [INFO] Baseline saved
+2026-03-13 00:09:25,937 [INFO] Log file synced to S3
+2026-03-13 00:10:26,131 [INFO] Received SNS message
+2026-03-13 00:10:26,131 [INFO] Dispatching processing task for raw/sensors_20260313T001023.csv
+2026-03-13 00:10:26,132 [INFO] Processing file: raw/sensors_20260313T001023.csv
+2026-03-13 00:10:26,257 [INFO] Loaded 100 rows
+2026-03-13 00:10:26,332 [INFO] Baseline loaded
+2026-03-13 00:10:26,333 [INFO] Baseline updated
+2026-03-13 00:10:26,532 [INFO] Uploaded processed file processed/sensors_20260313T001023.csv
+2026-03-13 00:10:26,562 [INFO] Baseline saved
+2026-03-13 00:10:26,562 [INFO] Baseline saved
+2026-03-13 00:10:26,623 [INFO] Log file synced to S3
+2026-03-13 00:11:26,908 [INFO] Received SNS message
+2026-03-13 00:11:26,909 [INFO] Dispatching processing task for raw/sensors_20260313T001124.csv
+2026-03-13 00:11:26,910 [INFO] Processing file: raw/sensors_20260313T001124.csv
+2026-03-13 00:11:26,988 [INFO] Loaded 100 rows
+2026-03-13 00:11:27,062 [INFO] Baseline loaded
+2026-03-13 00:11:27,063 [INFO] Baseline updated
+2026-03-13 00:11:27,263 [INFO] Uploaded processed file processed/sensors_20260313T001124.csv
+2026-03-13 00:11:27,293 [INFO] Baseline saved
+2026-03-13 00:11:27,293 [INFO] Baseline saved
+2026-03-13 00:11:27,328 [INFO] Log file synced to S3
+2026-03-13 00:12:28,270 [INFO] Received SNS message
+2026-03-13 00:12:28,270 [INFO] Dispatching processing task for raw/sensors_20260313T001225.csv
+2026-03-13 00:12:28,271 [INFO] Processing file: raw/sensors_20260313T001225.csv
+2026-03-13 00:12:28,395 [INFO] Loaded 100 rows
+2026-03-13 00:12:28,474 [INFO] Baseline loaded
+2026-03-13 00:12:28,475 [INFO] Baseline updated
+2026-03-13 00:12:28,668 [INFO] Uploaded processed file processed/sensors_20260313T001225.csv
+2026-03-13 00:12:28,694 [INFO] Baseline saved
+2026-03-13 00:12:28,695 [INFO] Baseline saved
